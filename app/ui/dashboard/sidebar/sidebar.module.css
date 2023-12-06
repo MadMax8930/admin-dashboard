@@ -55,5 +55,5 @@
 }
 
 .logout:hover {
-   background-color: var(--bgHover);
+   background-color: var(--bgGray);
 }

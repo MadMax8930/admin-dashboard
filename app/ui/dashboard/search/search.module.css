@@ -2,7 +2,7 @@
    display: flex;
    align-items: center;
    gap: 10px;
-   background-color: var(--bgHover);
+   background-color: var(--bgGray);
    padding: 10px;
    border-radius: 10px;
    width: max-content;
