@@ -32,6 +32,7 @@
    background-color: transparent;
    color: var(--text);
    border: none;
+   outline: none;
 }
 
 .icons {
