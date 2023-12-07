@@ -6,9 +6,9 @@ import { useDebouncedCallback } from 'use-debounce'
 import styles from './search.module.css'
 
 const Search = ({ placeholder }) => {
+   const { replace } = useRouter();
    const pathname = usePathname();
    const searchParams = useSearchParams();
-   const { replace } = useRouter();
 
    const handleSearch = useDebouncedCallback((e) => {
       const params = new URLSearchParams(searchParams);
