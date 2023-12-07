@@ -1,5 +1,5 @@
 import { User, Product } from "./models";
-import { connectToDB } from "./utils";
+import { connectToDB } from "./connect";
 
 export const fetchUsers = async (query, page) => {
    const regex = new RegExp(query, "i");

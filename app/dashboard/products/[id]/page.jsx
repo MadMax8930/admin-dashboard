@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import styles from '@/app/ui/dashboard/products/singleProduct/singleProduct.module.css'
+import styles from '@/app/dashboard/products/[id]/oneProduct.module.css'
 
 const SingleProductPage = () => {
   return (

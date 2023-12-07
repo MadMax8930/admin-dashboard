@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import Search from '@/app/ui/dashboard/search/search'
-import Pagination from '@/app/ui/dashboard/pagination/pagination'
-import { fetchProducts } from '@/app/lib/data'
-import styles from '@/app/ui/dashboard/products/products.module.css'
+import Search from '@/app/ui/search/search'
+import Pagination from '@/app/ui/pagination/pagination'
+import { fetchProducts } from '@/app/database/fetchData'
+import styles from '@/app/dashboard/products/products.module.css'
 
 const ProductsPage = async ({ searchParams }) => {
    const searchQuery = searchParams?.q || "";

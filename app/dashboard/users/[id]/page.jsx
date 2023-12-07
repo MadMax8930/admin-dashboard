@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import styles from '@/app/ui/dashboard/users/singleUser/singleUser.module.css'
+import styles from '@/app/dashboard/users/[id]/oneUser.module.css'
 
 const SingleUserPage = () => {
   return (
