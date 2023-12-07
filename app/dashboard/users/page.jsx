@@ -7,8 +7,9 @@ import { fetchUsers } from '@/app/lib/data'
 import styles from '@/app/ui/dashboard/users/users.module.css'
 
 const UsersPage = async ({ searchParams }) => {
-   const query = searchParams?.q;
-   const users = await fetchUsers(query);
+   const searchQuery = searchParams?.q || "";
+   const pageQuery = searchParams?.p || 1;
+   const users = await fetchUsers(searchQuery, pageQuery);
 
   return (
     <div className={styles.container}>

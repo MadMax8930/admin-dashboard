@@ -12,10 +12,11 @@ const Search = ({ placeholder }) => {
 
    const handleSearch = useDebouncedCallback((e) => {
       const params = new URLSearchParams(searchParams);
+      params.set("p", 1); // page query
 
       const searchValue = e.target.value.trim();
       if (searchValue) {
-         searchValue.length > 1 && params.set("q", searchValue);
+         searchValue.length > 2 && params.set("q", searchValue); // search query
       } else {
          params.delete("q");
       }
