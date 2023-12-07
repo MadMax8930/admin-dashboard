@@ -6,9 +6,9 @@ import Pagination from '@/app/ui/dashboard/pagination/pagination'
 import { fetchUsers } from '@/app/lib/data'
 import styles from '@/app/ui/dashboard/users/users.module.css'
 
-const UsersPage = async () => {
-   const users = await fetchUsers();
-   console.log(users);
+const UsersPage = async ({ searchParams }) => {
+   const query = searchParams?.q;
+   const users = await fetchUsers(query);
 
   return (
     <div className={styles.container}>
