@@ -40,7 +40,8 @@
    border: 2px solid var(--bgGray);
    border-radius: 5px;
    background-color: var(--bg);
-   color: var(--text);
+   color: var(--text); 
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    margin: 10px 0px;
 }
 
