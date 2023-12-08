@@ -1,7 +1,3 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
 :root {
   --bg: #151c2c;
   --bgSoft: #182237;
@@ -25,4 +21,27 @@ body {
 a {
    color: inherit;
    text-decoration: none;
+}
+
+/* Home Page */
+
+.centerHome {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   height: 75vh;
+}
+
+.buttonHome {
+   padding: 10px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   background-color: var(--btnColor);
+   color: var(--text);
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
 }

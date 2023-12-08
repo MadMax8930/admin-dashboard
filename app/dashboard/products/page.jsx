@@ -36,7 +36,7 @@ const ProductsPage = async ({ searchParams }) => {
                <tr key={product._id}>
                   <td>
                      <div className={styles.product}>
-                        <Image src={product.img || "/noproduct.jpg"} alt="Product" width={40} height={40} className={styles.productImage} />
+                        <Image src={product.img || "/noproduct.jpg"} alt="Product" loading="eager" width={40} height={40} className={styles.productImage} />
                         {product.title}
                      </div>
                   </td>

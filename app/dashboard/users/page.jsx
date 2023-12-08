@@ -36,7 +36,7 @@ const UsersPage = async ({ searchParams }) => {
                <tr key={user._id}>
                   <td>
                      <div className={styles.user}>
-                        <Image src={user.img || "/noavatar.png"} alt="User" width={40} height={40} className={styles.userImage} />
+                        <Image src={user.img || "/noavatar.png"} alt="User" loading="eager" width={40} height={40} className={styles.userImage} />
                         {user.username}
                      </div>
                   </td>

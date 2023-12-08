@@ -12,7 +12,7 @@ const SingleProductPage = async ({ params }) => {
     <div className={styles.container}>
       <div className={styles.infoContainer}>
          <div className={styles.imgContainer}>
-            <Image src={product.img || '/noproduct.jpg'} alt='Product' fill />
+            <Image src={product.img || '/noproduct.jpg'} loading="eager" alt='Product' fill />
          </div>
          {product.title}
       </div>
